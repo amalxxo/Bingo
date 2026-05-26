@@ -37,13 +37,15 @@ public class Main {
         }*/
 
             int[][] bingo = new int[5][5];
-                
+            int players = 0;
+            System.out.println("Welcome to Bingo!");
+            System.out.println("Player" + (players+1) + " Draw Number: " + (int)(Math.random() * 100));
             for(int i=0; i<bingo.length; i++){
                 for(int j=0; j<bingo[i].length; j++){
                     bingo[i][j] = (int)(Math.random() * 100);
                     System.out.print(bingo[i][j]+ " ");
                 }
-                System.out.println("-----");
+                System.out.println();
             }
 
             
